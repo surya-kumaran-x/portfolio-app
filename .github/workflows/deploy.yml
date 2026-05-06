@@ -47,3 +47,6 @@ jobs:
             npm install
             npm run build
             pm2 restart portfolio || pm2 start npm --name "portfolio" -- run start
+defaults:
+  run:
+    working-directory: portfolio-app
